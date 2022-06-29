@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="seletor2.0.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+        <div class="topo"> <img class="logo" src="./img/logo.PNG" alt="QUE COR É ESTA?" class="logo" draggable="false">
+        </div>
+        <div class="corpo">
+            <div class="intro">
+                <h1>Descubra o código de cor de qualquer imagem</h1>
+                <p>Neste site é possível obter o código de cor RGB a partir de qualquer imagem.</br> Clique no
+                    campo abaixo e insira uma imagem, posteriormente clique em qualquer</br> parte da imagem
+                    para obter o código de cor RGB, HSL ou HEX do ponto clicado.</p>
+            </div>
+            <div class="campo">
+                <div class="content"> 
+                    <img src="./img/fechar.png" alt="X" id="fechar">
+                    <div class="entrada">
+                        <div class="preview" id="preview">
+                            <img id="image" draggable="false">
+                            <canvas id="cs" style="display:none;"></canvas>
+                            <input type="file" name="arquivo1" id="arquivo" accept="image/*">
+                        </div>
+                    </div>
+
+
+
+                </div>
+                <div class="saida">
+                    <p class="p1">Posição do mouse</p>
+                    <p class="p2">Cor selecionada</p>
+                    <div class="cor">
+                        <div id="previewCor"></div>
+                        <div id="selectCor"></div>
+                    </div>
+                    <div id="select">
+
+                        <div name="resultado" id="resultado"></div>
+                    </div>
+
+                </div>
+            </div>
+            <section class="info">
+                <div class="expli">
+                    <h2>-Código de cor-</h2>
+                    <p>Códigos de cor são uma maneira numérica de descrever as cores em um sistema de cores.
+                        <br>
+                        A maioria dos modelos de cores possui 3 dimensões, como a mais conhecida:
+                        <br>
+                        RGB. De Vermelho, Verde e Azul.
+                    </p>
+                </div>
+                <div class="rgb">
+                    <h2>O que é RBG?</h2>
+                    <p>A abreviatura RGB (Red, Green, Blue) representa o método de cores utilizadas em monitores
+                        <br>
+                        e eletrônicos emissores, fazendo referência aos tons vermelho, verde e azul para compor
+                        <br>
+                        imagens coloridas nas telas.
+                        <br>
+                        Essa escala tem como base a <a
+                            href="https://clube.design/2018/cor-2-teoria-tricromatica/">Teoria Tricromática</a>
+                        em que a luz é o elemento chave para a
+                        <br>
+                        formação de cores através do <a
+                            href="https://gerenciamentodecor.wordpress.com/2016/02/20/cores-sistema-aditivo-e-substrativo/">sistema
+                            aditivo</a> – capaz de gerar mais de 16 milhões de tonalidades
+                        <br>
+                        diferentes ao serem divididas nos 255 níveis.
+                    </p>
+                </div>
+                <div class="hsl">
+                    <h2>O que é HSL?</h2>
+                    <p>O padrão HSL é representado por Hue (tom), Saturation (saturação) e Lightness
+                        (luminosidade).
+                        <br>
+                        O valor do tom é medido em ângulos expresso em graus. O valor de saturação é medido
+                        <br>
+                        em porcentagem, sendo 0% um leve sombreado de saturação e 100% uma saturação total da
+                        cor.
+                        <br>
+                        O valor de luminosidade também é expresso em porcentagem.
+                    </p>
+                </div>
+                <div class="hex">
+                    <h2>O que é Hexadecimal?</h2>
+                    <p>O código <a
+                            href="https://www.tracto.com.br/o-que-e-codigo-hexadecimal-como-descobri-lo-em-uma-imagem/">Hexadecimal</a>
+                        para cores consiste em seis letras ou números precedidos do "#", <br>
+                        seus números significam:
+                        <br>
+                        Os dois primeiros elementos representam a intensidade de vermelho;
+                        <br>
+                        O terceiro e quarto elementos representam a intensidade de verde;
+                        <br>
+                        Os dois últimos a intensidade de azul.
+                        <br>
+                        Desta forma, o resultado final será a combinação dessas três cores em diferentes
+                        intensidades,
+                        <br>
+                        formando a cor desejada. Os valores variam entre 00 (mais escuro) até FF (mais claro).
+                    </p>
+                </div>
+            </section>
+        </div>
+    <footer>
+        <p>&copy; 2022 - Felipe - Todos os diretos reservados<p>
+    </footer>
+    </main>
+
+    <script src="seletor.js"></script>
+</body>
+
+</html>
