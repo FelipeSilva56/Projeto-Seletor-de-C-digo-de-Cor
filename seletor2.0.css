@@ -53,7 +53,7 @@ input[type="file"]{
     width:400px;
     height:200px;
     position: absolute;
-    margin-left: 30px;
+    margin-left:2%;
 }
 h1 {
     margin: 0;
@@ -66,9 +66,11 @@ h1 {
 h2 {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    padding-top: 40px;
+    padding-top: 60px;
     padding-left: 30px;
     text-align: center;
+    font-size: 30px;
+    margin-bottom: 15px;
 
 }
 
@@ -80,6 +82,9 @@ p {
     color: #000;
     font-size: 13pt;
 }
+.info p{
+    padding-right:50px;
+}
 #fechar{
     float: right;
     background: #df0c0cb4;
@@ -87,7 +92,7 @@ p {
     cursor: pointer;
     box-sizing: border-box;
     position: absolute;
-    top: -15px;
+    top: -10px;
     left: 98%;
 }
 #fechar:hover{
@@ -154,7 +159,6 @@ footer p{
 @media(max-width:950px){
     .corpo{
         width:100%;
-        min-width: 850px;
         border: 0px;
     }
 }
@@ -260,4 +264,34 @@ footer p{
         padding-left: 5px !important;
     }
 
+}
+
+.ex_rgb{
+    margin-left: 25%;
+    margin-right: 25%;
+    max-width: 50%;
+}
+
+.ex_rgb2{
+    margin-left: 25%;
+    margin-right: 25%;
+    max-width: 50%;
+}
+
+.ex_hsl{
+    margin-left: 18%;
+    width: 60%;
+}
+
+.ex_hex{
+    margin-left: 25%;
+    margin-right: 25%;
+    max-width: 50%;
+}
+
+.ex_hex2{
+    margin-left: 25%;
+    margin-right: 25%;
+    max-width: 50%;
+    margin-bottom: 50px;
 }
