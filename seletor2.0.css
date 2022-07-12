@@ -45,7 +45,9 @@ input[type="file"]{
     border: dashed 2px black;
     overflow-y: auto;
     overflow-x: auto;
-    cursor: crosshair
+    cursor: crosshair;
+    transition: background-color 0.5s ease-in-out;
+    transition: color 0.5s ease-in-out  ;
 }
 .saida{
     float:right;
@@ -123,13 +125,17 @@ display: inline-block;
 margin-top: 40px;
 width:300px;
 height:100px;
-background-color: rgb(0, 8, 12);
+background-color: rgba(0, 8, 12, 0.322);
 border:solid 1px black;
 font-family: Arial, Helvetica, sans-serif;
 font-size: 25px;
 margin-left: 30px;
-color:#ffffff;
+color:#1a1515;
 padding:5px;
+}
+.preview:hover{
+    background-color: rgba(0, 0, 0, 0.377);
+    color:#fff;
 }
 .saida p{
     display: inline-block;
@@ -232,7 +238,7 @@ footer p{
 @media(max-width:530px) {
     p{
         font-size:10pt;
-        padding-left: 3%;
+        padding-left:8%;
     }
     .intro{
         max-width: 530px;
@@ -262,6 +268,12 @@ footer p{
     }
     .p1{
         padding-left: 5px !important;
+    }
+    #resultado{
+        font-size: 18px;
+        line-height: 25px;
+        text-align: left;
+
     }
 
 }
@@ -295,4 +307,11 @@ footer p{
     max-width: 50%;
     margin-bottom: 50px;
 }
+.msg{
+    margin-top: 15%;
+    font-family: Courier New, monospace;
+}
 
+.msgDesativo{
+    display:none;
+}

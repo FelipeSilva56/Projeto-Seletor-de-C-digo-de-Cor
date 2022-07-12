@@ -11,7 +11,7 @@ preview.onclick = () =>{
 
 let image = document.getElementById('image')
 let fechar = document.querySelector("#fechar");
-
+let msg = document.querySelector(".msg");
 fechar.classList.add('fecharOff')
 
 
@@ -21,7 +21,8 @@ fechar.addEventListener('click', function(){
     fechar.classList.add('fecharOff')
     previewCor.style.backgroundColor = "rgba(255,255,255, 0)"
     selectCor.style.backgroundColor = "rgba(255,255,255, 0)"
-    resultado.innerHTML = ''
+    resultado.innerHTML = '';
+    msg.classList.remove('msgDesativo')
 });
 
 
@@ -38,6 +39,7 @@ window.addEventListener('DOMContentLoaded', () =>{
         //image.style.height = '100%';
 
         fechar.classList.remove('fecharOff');
+        msg.classList.add('msgDesativo')
     });   
 });
 
@@ -79,8 +81,8 @@ image.addEventListener('click', (e) =>{
     let hsl = rgbParaHsl(p[0], p[1], p[2])
     let hex = rgbParaHex(p[0], p[1], p[2])
     resultado.innerHTML = 'RGB: '+ rgb +'<br>' 
-    resultado.innerHTML += 'HSL :'+ hsl +'<br>' 
-    resultado.innerHTML += 'Hexadecimal :' + hex
+    resultado.innerHTML += 'HSL: '+ hsl +'<br>' 
+    resultado.innerHTML += 'Hexadecimal: ' + hex
     
     selectCor.style.backgroundColor = hex    
     });
