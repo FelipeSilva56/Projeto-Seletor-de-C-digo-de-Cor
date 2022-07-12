@@ -12,7 +12,7 @@
 <p>1º Ao passar o cursor do mouse sobre a imagem inserida</p>
 <p>A cor da localização do cursor é devolvida no campo 2º</p>
 <p>e ao clicarmos em algum ponto da imagem, temos a cor exata exibida no campo 3º </p>
-<p>Por fim no campo 4º temos as podemos ver o codigo RGB HSL e Hexadecimal do ponto onde foi clicado</p>
+<p>Por fim no campo 4º podemos ver o codigo RGB HSL e Hexadecimal da cor do ponto onde foi clicado</p>
 
 ![image](https://user-images.githubusercontent.com/93503496/178583935-4da7363c-382f-44d2-91af-d7c492c9afdc.png)
 
